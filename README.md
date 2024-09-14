@@ -1,7 +1,6 @@
 Popis projektu
     Tento projekt slouží k extrahování výsledků z parlamentích voleb v roce 2017.
 
-
 Instalace knihoven
     Knihovny, které jsou použity v kódu jsou uložené v souboru requirements.txt . Pro instalaci doporučuji použít nové virtuální prostředí a s nainstalovaným manažerem spusti následovně:
     pip install -r requirements.txt
