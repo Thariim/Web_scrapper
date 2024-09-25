@@ -37,7 +37,7 @@ Výsledky hlasování pro okres Beroun:
 2. Argument: elections.csv
 
 Spouštění programu:
-    python web_scrapper.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2106" "elections.csv"
+python web_scrapper.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2106" "elections.csv"
 
 Code,Name,Voters,Envelopes,Votes,Občanská demokratická strana.......
 534421,Bavoryně,239,151,150,18,0,0,6,0,8,7,5,2,4,0,0,16
