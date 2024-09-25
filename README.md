@@ -30,7 +30,7 @@ Ukázka projektu:
         2. Argument: elections.csv
 
         Spouštění programu:
-            python web_scraper "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2106" "elections.csv"
+            python web_scrapper.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2106" "elections.csv"
 
         Částečný výstup:
             Code,Name,Voters,Envelopes,Votes,Občanská demokratická strana.......

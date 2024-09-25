@@ -1,5 +1,3 @@
-from bs4 import BeautifulSoup as bs
-
 class ParamMaker:
     def __init__(self, soup):
         """
@@ -17,9 +15,13 @@ class ParamMaker:
         Returns:
             str: Village name or None if not found.
         """
+        target_value = 'Obec:'
+
         return next(
-            (h3.text.replace('Obec:', '').strip() for h3 in self.soup.find_all("h3") if "Obec:" in h3.text),
-            None
+                    (h3.text.replace(target_value, '').strip()
+                    for h3 in self.soup.find_all("h3")
+                    if target_value in h3.text),
+                    None
         )
 
     def voters_maker(self):
@@ -70,8 +72,4 @@ class ParamMaker:
 
         parties= [(name.text.strip() , int(vote.text.strip().replace('\xa0', '').replace(' ', ''))) for name, vote in zip(party_names, party_votes)]
 
-        #parties = {
-        #    name.text.strip(): int(vote.text.strip().replace('\xa0', '').replace(' ', ''))
-        #    for name, vote in zip(party_names, party_votes)
-        #}
         return parties

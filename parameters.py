@@ -8,6 +8,6 @@ class Parameters:
         self.votes = votes
         self.parties = parties
 
-    def __repr__(self):
+    def __str__(self):
         return (f"Parameters(code={self.code}, name={self.name}, voters={self.voters}, "
                 f"envelopes={self.envelopes}, votes={self.votes}, parties={self.parties})")

@@ -4,16 +4,16 @@ author: Viktor Krchňavý
 email: krchnavy.viktor@gmail.com
 discord: Tharim
 """
+import sys
 
-
-from bs4 import BeautifulSoup as bs
-import requests
-from pprint import pprint
 from urllib.parse import urljoin
+
+import requests
+from bs4 import BeautifulSoup as bs
+
+from csv_writer import CSVWriter
 from parameters import Parameters
 from param_maker import ParamMaker
-from csv_writer import CSVWriter
-import sys
 
 def validate_url(url):
     """
