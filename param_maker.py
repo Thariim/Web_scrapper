@@ -40,42 +40,6 @@ class ParamMaker:
                     None
         )
 
-    def voters_maker(self):
-        """
-        Extract the number of voters from the HTML.
-        
-        Returns:
-            int: Number of voters or None if not found.
-        """
-        td_elements = self.soup.find_all("td", {'headers': 'sa2'})
-        if td_elements:
-            return int(td_elements[0].text.strip().replace('\xa0', ''))
-        return None
-
-    def envelopes_maker(self):
-        """
-        Extract the number of envelopes from the HTML.
-        
-        Returns:
-            int: Number of envelopes or None if not found.
-        """
-        td_elements = self.soup.find_all("td", {'headers': 'sa3'})
-        if td_elements:
-            return int(td_elements[0].text.strip().replace('\xa0', ''))
-        return None
-
-    def votes_maker(self):
-        """
-        Extract the number of votes from the HTML.
-        
-        Returns:
-            int: Number of votes or None if not found.
-        """
-        td_elements = self.soup.find_all("td", {'headers': 'sa6'})
-        if td_elements:
-            return int(td_elements[0].text.strip().replace('\xa0', ''))
-        return None
-
     def party_maker(self):
         """
         Extract the party names and their votes from the HTML.
