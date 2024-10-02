@@ -24,8 +24,6 @@ param_maker.py: # Definuje ParamMaker class pro extrahování dat z HTML.
 
 parameters.py: # Definuje Parameters class pro uložení dat vesnic.
 
-csv_writer.py: # Definuje CSVWriter class pro export dat do csv.
-
 requirements.txt: # List použitých knihoven.
 
 README.md: # Dokumentace.
